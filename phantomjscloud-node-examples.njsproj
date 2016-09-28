@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>phantomjscloud-node-examples</Name>
+    <RootNamespace>phantomjscloud-node-examples</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>52f5a87c-ba25-479b-82d5-20aa33b69819</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>dist\_main.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <EnableTypeScript>true</EnableTypeScript>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="tsconfig.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <TypeScriptCompile Include="dev\basic\capture-pdf-promise.ts" />
+    <TypeScriptCompile Include="dev\basic\capture-plaintext-promise.ts" />
+    <TypeScriptCompile Include="dev\refs.ts" />
+    <TypeScriptCompile Include="dev\_main.ts" />
+    <TypeScriptCompile Include="src\advanced\query-and-mine-alexa-topsites.ts" />
+    <TypeScriptCompile Include="src\basic\capture-pdf-promise.ts" />
+    <TypeScriptCompile Include="src\basic\capture-pdf.ts" />
+    <TypeScriptCompile Include="src\basic\capture-plaintext-promise.ts" />
+    <TypeScriptCompile Include="src\refs.ts" />
+    <TypeScriptCompile Include="src\_index.ts" />
+    <TypeScriptCompile Include="typings\browser.d.ts" />
+    <TypeScriptCompile Include="typings\browser\ambient\axios\index.d.ts" />
+    <TypeScriptCompile Include="typings\browser\ambient\d3-dsv\index.d.ts" />
+    <TypeScriptCompile Include="typings\browser\ambient\decimal.js\index.d.ts" />
+    <TypeScriptCompile Include="typings\browser\ambient\json5\index.d.ts" />
+    <TypeScriptCompile Include="typings\browser\ambient\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\browser\ambient\sanitize-html\index.d.ts" />
+    <TypeScriptCompile Include="typings\browser\ambient\sprintf-js\index.d.ts" />
+    <TypeScriptCompile Include="typings\browser\definitions\bluebird\index.d.ts" />
+    <TypeScriptCompile Include="typings\browser\definitions\chalk\index.d.ts" />
+    <TypeScriptCompile Include="typings\browser\definitions\jsonwebtoken\index.d.ts" />
+    <TypeScriptCompile Include="typings\browser\definitions\lodash\index.d.ts" />
+    <TypeScriptCompile Include="typings\browser\definitions\validator\index.d.ts" />
+    <TypeScriptCompile Include="typings\main.d.ts" />
+    <TypeScriptCompile Include="typings\main\ambient\async\index.d.ts" />
+    <TypeScriptCompile Include="typings\main\ambient\axios\index.d.ts" />
+    <TypeScriptCompile Include="typings\main\ambient\d3-dsv\index.d.ts" />
+    <TypeScriptCompile Include="typings\main\ambient\decimal.js\index.d.ts" />
+    <TypeScriptCompile Include="typings\main\ambient\json5\index.d.ts" />
+    <TypeScriptCompile Include="typings\main\ambient\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\main\ambient\sanitize-html\index.d.ts" />
+    <TypeScriptCompile Include="typings\main\ambient\sprintf-js\index.d.ts" />
+    <TypeScriptCompile Include="typings\main\definitions\bluebird\index.d.ts" />
+    <TypeScriptCompile Include="typings\main\definitions\chalk\index.d.ts" />
+    <TypeScriptCompile Include="typings\main\definitions\jsonwebtoken\index.d.ts" />
+    <TypeScriptCompile Include="typings\main\definitions\lodash\index.d.ts" />
+    <TypeScriptCompile Include="typings\main\definitions\validator\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\basic\" />
+    <Folder Include="src\advanced\" />
+    <Folder Include="typings\browser\ambient\axios\" />
+    <Folder Include="typings\browser\ambient\d3-dsv\" />
+    <Folder Include="typings\browser\ambient\decimal.js\" />
+    <Folder Include="typings\browser\ambient\json5\" />
+    <Folder Include="typings\browser\ambient\node\" />
+    <Folder Include="typings\browser\ambient\sanitize-html\" />
+    <Folder Include="typings\browser\ambient\sprintf-js\" />
+    <Folder Include="typings\browser\definitions\" />
+    <Folder Include="typings\browser\definitions\bluebird\" />
+    <Folder Include="typings\browser\definitions\chalk\" />
+    <Folder Include="typings\browser\definitions\jsonwebtoken\" />
+    <Folder Include="typings\browser\definitions\lodash\" />
+    <Folder Include="typings\browser\definitions\validator\" />
+    <Folder Include="typings\main\" />
+    <Folder Include="typings\main\ambient\" />
+    <Folder Include="typings\main\ambient\async\" />
+    <Folder Include="typings\main\ambient\axios\" />
+    <Folder Include="typings\main\ambient\d3-dsv\" />
+    <Folder Include="typings\main\ambient\decimal.js\" />
+    <Folder Include="typings\main\ambient\json5\" />
+    <Folder Include="typings\main\ambient\node\" />
+    <Folder Include="typings\main\ambient\sanitize-html\" />
+    <Folder Include="typings\main\ambient\sprintf-js\" />
+    <Folder Include="typings\main\definitions\" />
+    <Folder Include="typings\main\definitions\bluebird\" />
+    <Folder Include="typings\main\definitions\chalk\" />
+    <Folder Include="typings\main\definitions\jsonwebtoken\" />
+    <Folder Include="typings\main\definitions\lodash\" />
+    <Folder Include="typings\main\definitions\validator\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UnitTest1.js">
+      <SubType>Code</SubType>
+      <TestFramework>Mocha</TestFramework>
+    </Compile>
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
