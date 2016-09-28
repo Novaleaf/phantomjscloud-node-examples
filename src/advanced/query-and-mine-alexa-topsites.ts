@@ -4,6 +4,7 @@ import xlib = refs.xlib;
 import phantomJsCloud = refs.phantomJsCloud;
 import _ = xlib.lodash;
 
+//show verbose details
 phantomJsCloud.setDebug(true);
 
 //let log = new xlib.logging.Logger(__filename);
@@ -108,11 +109,6 @@ function writeTopsiteTextToFile(urls: string[]) {
 
     return results;
 }
-
-
-
-
-
 
 
 

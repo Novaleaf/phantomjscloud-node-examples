@@ -3,6 +3,7 @@ var refs = require("../refs");
 var xlib = refs.xlib;
 var phantomJsCloud = refs.phantomJsCloud;
 var _ = xlib.lodash;
+//show verbose details
 phantomJsCloud.setDebug(true);
 //let log = new xlib.logging.Logger(__filename);
 //log.info("make a request to render a single page, returning the plain-text contents of the page.");
