@@ -34,3 +34,13 @@ export function runExample() {
 		});
 
 }
+
+
+//if this script is run directly, execute the example automatically
+if (!module.parent) {
+    //parent
+    runExample();
+} else {
+    //child
+    //noop
+}
