@@ -39,6 +39,7 @@
     <TypeScriptCompile Include="src\advanced\query-and-mine-alexa-topsites.ts" />
     <TypeScriptCompile Include="src\basic\capture-pdf-promise.ts" />
     <TypeScriptCompile Include="src\basic\capture-pdf.ts" />
+    <TypeScriptCompile Include="src\basic\post-request.ts" />
     <TypeScriptCompile Include="src\basic\capture-plaintext-promise.ts" />
     <TypeScriptCompile Include="src\refs.ts" />
     <TypeScriptCompile Include="src\_index.ts" />

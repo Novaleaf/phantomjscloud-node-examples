@@ -8,6 +8,8 @@ if you have any additional examples, please feel free to either email them to ja
 
 conversely, if you need an example of something, feel free to open an [issue on github](https://github.com/Novaleaf/phantomjscloud-node-examples/issues) and Jason will try to help out.
 
+The examples are written in Typescript, but the output javascript (under ```./dist/```) is highly readable.
+
 ## installation
 
 
