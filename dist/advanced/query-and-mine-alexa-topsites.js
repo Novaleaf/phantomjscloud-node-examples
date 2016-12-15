@@ -85,6 +85,7 @@ function runExample() {
                 return Promise.resolve(url);
             }, function (err) {
                 log.error("error on writeTopsiteTextToFile() for " + url + " error=", err.toString());
+                return Promise.resolve("ERROR " + url + " failed, but we ignore the error.");
             });
             results.push(result);
         });
