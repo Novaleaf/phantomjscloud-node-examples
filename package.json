@@ -1,6 +1,6 @@
 {
   "name": "phantomjscloud-examples",
-  "version": "1.0.17",
+  "version": "2.0.0",
   "description": "examples showing usage of PhantomJs Cloud with typescript",
   "keywords": [
     "PhantomJs",
