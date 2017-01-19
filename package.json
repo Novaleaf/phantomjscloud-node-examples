@@ -25,8 +25,8 @@
   },
   "scripts": {},
   "dependencies": {
-    "phantomjscloud": "^2.0.0",
-    "xlib": "^8.0.2"
+    "phantomjscloud": "^2.0.3",
+    "xlib": "^8.0.4"
   },
   "devDependencies": {}
 }

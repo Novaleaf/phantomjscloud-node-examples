@@ -34,8 +34,6 @@ export function runExample(): Promise<void> {
 	//////////  MAIN EXAMPLE:   
 	//make demo app to automatically extract top 100 sites from alexia, then crawl them all extracting all hyperlinks
 
-
-
 	interface ITopsitesData { urls: string[]; next: string | null }
 	let topsitesPayload: ITopsitesData = { urls: [], next: null };
 
