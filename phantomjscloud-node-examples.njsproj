@@ -37,6 +37,7 @@
     <Content Include="package.json" />
     <Content Include="README.md" />
     <TypeScriptCompile Include="src\advanced\query-and-mine-alexa-topsites.ts" />
+    <TypeScriptCompile Include="src\basic\render-custom-html-to-pdf-promise.ts" />
     <TypeScriptCompile Include="src\basic\capture-pdf-promise.ts" />
     <TypeScriptCompile Include="src\basic\capture-pdf.ts" />
     <TypeScriptCompile Include="src\basic\post-request.ts" />

@@ -1,6 +1,7 @@
 "use strict";
-var refs = require("../refs");
-var phantomJsCloud = refs.phantomJsCloud;
+Object.defineProperty(exports, "__esModule", { value: true });
+//import refs = require("../refs");
+var phantomJsCloud = require("phantomjscloud");
 var fs = require("fs");
 /**
  *  basic example using callback
@@ -29,5 +30,7 @@ if (!module.parent) {
     runExample();
 }
 else {
+    //child
+    //noop
 }
 //# sourceMappingURL=capture-pdf.js.map

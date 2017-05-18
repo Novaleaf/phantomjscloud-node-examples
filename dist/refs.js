@@ -7,13 +7,13 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
     }
     return t;
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 //specify xlib config options, without requiring environmental config
-//if ((global as any)._xlibConfigDefaults == null) { (global as any)._xlibConfigDefaults = {}; }
 global._xlibConfigDefaults = __assign({}, {
-    logLevel: "DEBUG",
-    envLevel: "PREPROD",
+    logLevel: "TRACE",
+    envLevel: "PROD",
     isTest: "FALSE",
-    isDev: "TRUE",
+    isDev: "FALSE",
     sourceMapSupport: true,
 }, global._xlibConfigDefaults);
 exports.xlib = require("xlib");

@@ -1,5 +1,6 @@
-﻿import refs = require("../refs");
-import phantomJsCloud = refs.phantomJsCloud;
+﻿//import refs = require("../refs");
+import phantomJsCloud = require("phantomjscloud");
+
 
 import fs = require("fs");
 
