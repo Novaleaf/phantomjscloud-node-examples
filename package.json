@@ -17,16 +17,16 @@
     "name": "Jason Swearingen",
     "email": "jasons@novaleaf.com"
   },
-  "main": "./dist/_index.js",
-  "types": "./dist/_index.d.ts",
+  "main": "./src/_index.js",
+  "types": "./src/_index.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/Novaleaf/phantomjscloud-node-examples"
   },
   "scripts": {},
   "dependencies": {
-    "phantomjscloud": "^2.0.3",
-    "xlib": "^8.0.4"
+    "phantomjscloud": "^3.0.0",
+    "xlib": "^9.0.0"
   },
   "devDependencies": {}
 }
