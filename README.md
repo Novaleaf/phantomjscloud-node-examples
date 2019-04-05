@@ -14,17 +14,17 @@ The examples are written in Typescript, but the output javascript (under ```./di
 
 
 1. download:  ```npm install phantomjscloud-examples``` or pull the repository from github
-2. browse to the desired ```./example-projects/*``` subfolder
-3. ```npm install``` to get all the various prerequisites.
-4. ```node .``` to run the example.
+2. ```npm install``` to install the prerequisite ```phantomjscloud``` module.
+3. browse to the desired ```./built/basic/*``` file and read the code
 
 ## run
 
 you can run the various examples from the root directory in this way:
 
-- ```node ./dist/basic/capture-pdf.js```
-- ```node ./dist/basic/capture-pdf-promise.js```
-- ```node ./dist/basic/capture-plaintext-promise.js```
-- ```node ./dist/advanced/query-and-mine-alexa-topsites.js```
-- be sure to check the ```./dist/``` folder structure for any other (new) examples too.
+- ```node ./built/basic/post-request.js```
+- ```node ./built/basic/capture-pdf.js```
+- ```node ./built/basic/capture-pdf-promise.js```
+- ```node ./built/basic/capture-plaintext-promise.js```
+
+- check the ```./built/``` folder structure for any other (new) examples too.
 
