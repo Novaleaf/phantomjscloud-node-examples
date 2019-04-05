@@ -1,8 +1,9 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var refs = require("./refs");
-var xlib = refs.xlib;
-var log = new xlib.logging.Logger(__filename);
+// import refs = require("./refs");
+// import xlib = refs.xlib;
+// import phantomJsCloud = refs.phantomJsCloud;
+// import _ = xlib.lodash;
+//let log = new xlib.logging.Logger(__filename);
 //log.info("PhantomJsCloud examples.   uncomment the various lines below to run an example.");
 //////////////////////////
 //// basic examples
@@ -27,5 +28,5 @@ var log = new xlib.logging.Logger(__filename);
 //import * as queryAndMineAlexaTopsites from "./advanced/query-and-mine-alexa-topsites";
 ////WARNING!!!!   running this example costs about $0.30, so you need paid credits or it would aborted part way through.
 //queryAndMineAlexaTopsites.runExample();
-log.warn("read the README.MD for how to run the examples.   \n for example, run: \n\t\t node ./dist/basic/capture-pdf-promise.js");
+console.warn("read the README.MD for how to run the examples.   \n for example, run: \n\t\t node ./built/basic/capture-pdf-promise.js");
 //# sourceMappingURL=_index.js.map

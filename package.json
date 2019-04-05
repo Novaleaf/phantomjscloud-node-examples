@@ -4,6 +4,8 @@
   "description": "examples showing usage of PhantomJs Cloud with typescript",
   "keywords": [
     "PhantomJs",
+    "Puppeteer",
+    "Chrome",
     "PhantomJsCloud",
     "examples"
   ],
@@ -17,16 +19,14 @@
     "name": "Jason Swearingen",
     "email": "jasons@novaleaf.com"
   },
-  "main": "./src/_index.js",
-  "types": "./src/_index.ts",
+  "main": "./built/_index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Novaleaf/phantomjscloud-node-examples"
   },
   "scripts": {},
   "dependencies": {
-    "phantomjscloud": "^3.0.0",
-    "xlib": "^9.0.0"
+    "phantomjscloud": "^3.5.5"
   },
   "devDependencies": {}
 }

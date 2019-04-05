@@ -1,11 +1,11 @@
 ﻿
-import refs = require("./refs");
-import xlib = refs.xlib;
-import phantomJsCloud = refs.phantomJsCloud;
-import _ = xlib.lodash;
+// import refs = require("./refs");
+// import xlib = refs.xlib;
+// import phantomJsCloud = refs.phantomJsCloud;
+// import _ = xlib.lodash;
 
 
-let log = new xlib.logging.Logger(__filename);
+//let log = new xlib.logging.Logger(__filename);
 
 //log.info("PhantomJsCloud examples.   uncomment the various lines below to run an example.");
 
@@ -43,4 +43,5 @@ let log = new xlib.logging.Logger(__filename);
 //queryAndMineAlexaTopsites.runExample();
 
 
-log.warn("read the README.MD for how to run the examples.   \n for example, run: \n\t\t node ./dist/basic/capture-pdf-promise.js");
+console.warn( "read the README.MD for how to run the examples.   \n for example, run: \n\t\t node ./built/basic/capture-pdf-promise.js" );
+

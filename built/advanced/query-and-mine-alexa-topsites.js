@@ -1,3 +1,4 @@
+"use strict";
 console.log("sorry the alexa example doesn't work anymore.  they put the topsites list behind a paywall.   the old code is commented out in this file if you want to see it.");
 //import refs = require("../refs");
 //import xlib = refs.xlib;
@@ -133,5 +134,5 @@ console.log("sorry the alexa example doesn't work anymore.  they put the topsite
 //} else {
 //	//child
 //	//noop
-//} 
+//}
 //# sourceMappingURL=query-and-mine-alexa-topsites.js.map

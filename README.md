@@ -14,8 +14,9 @@ The examples are written in Typescript, but the output javascript (under ```./di
 
 
 1. download:  ```npm install phantomjscloud-examples``` or pull the repository from github
-2. browse to the root folder
+2. browse to the desired ```./example-projects/*``` subfolder
 3. ```npm install``` to get all the various prerequisites.
+4. ```node .``` to run the example.
 
 ## run
 

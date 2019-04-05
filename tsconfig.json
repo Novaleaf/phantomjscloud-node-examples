@@ -1,5 +1,6 @@
+//default for novaleaf stage5
 {
-  "compileOnSave": true,
+  //"compileOnSave": true,
   "compilerOptions": {
     "module": "commonjs",
     "removeComments": false,
@@ -7,46 +8,120 @@
     "sourceMap": true,
     "inlineSources": false,
     "inlineSourceMap": false,
-    //"declaration": false,
+    //"composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noEmitOnError": false,
     "jsx": "react",
     "newLine": "LF",
     "pretty": true,
     "stripInternal": true,
-    "diagnostics": true,
-    "target": "es5",
+    //"diagnostics": true, // verbose debug output of tsc build
+    //"listFiles": true, // verbose debug output of tsc build
+    //"listEmittedFiles": true, // verbose debug output of tsc build
+    //"target": "es2018", //es6 for browsers, node v10.15.2 supports es2018, node v8.x supports es2016  //! v15 (was es6)
     "watch": false,
     "moduleResolution": "node",
+    // * type strictness section    
+    "strict": false, /////////  change for vNext    
     "forceConsistentCasingInFileNames": true,
-
-    //"outDir": "./dist",
-    //"rootDir": "./src",
-
     "noImplicitReturns": true,
-    "noImplicitAny": true,
+    "noImplicitAny": true, //! v15
     "noImplicitThis": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "strictNullChecks": true,
-
-    //"types": ["node","mocha", "bluebird"],
-    //workaround for npm linking projects and associated dupe identifier bugs: https://github.com/Microsoft/TypeScript/issues/9566#issuecomment-287633339
-    "baseUrl": "./",
-
-    "paths": {
-      "*": [
-        "node_modules/@types/*",
-        "*",
-        "custom-dts/*"
-        //,"node_modules/xlib/node_modules/@types/*"
-      ]
-    }
+    "noUnusedLocals": false, //no, little use, and causes things like unused interfaces to cause errors.
+    "noUnusedParameters": false, //no, as it causes parameters in anon functions to error.
+    "strictNullChecks": false, //! v16 maybe, to prevent unexpected null or undefines.  but it is VERY MUCH A PAIN IN THE ASS
+    "suppressExcessPropertyErrors": false,
+    "suppressImplicitAnyIndexErrors": false,
+    "noStrictGenericChecks": false, //! v15
+    "skipLibCheck": false,
+    "alwaysStrict": true,
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true, //! try
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": true,
+    "strictFunctionTypes": true, //! v15
+    "strictPropertyInitialization": false, // ! v16 maybe, as it requires strictNullChecks to be true
+    //"baseUrl": null,
+    //"charset": null,
+    "checkJs": false,
+    "downlevelIteration": true,
+    "emitBOM": false,
+    "emitDeclarationOnly": false,
+    "disableSizeLimit": false,
+    "emitDecoratorMetadata": true, // ! try /////////  change for vNext
+    "esModuleInterop": true, // ! try
+    "experimentalDecorators": true, //! try
+    "importHelpers": true,
+    "keyofStringsOnly": false, //! v15
+    "noErrorTruncation": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "isolatedModules": false, //can not do this and re-export types
+    "strictBindCallApply": true, //! v15
+    "typeRoots": [
+      "./src/types",
+    ],
+    "types": [],
+    "outDir": "built",
+    "rootDir": "src",
+    // "lib": [
+    //   "es2015",
+    //   "dom",
+    // ],
+    //"noLib": true,
+    // "plugins": [
+    //   {
+    //     "name": "typescript-tslint-plugin"
+    //   }
+    // ]
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin",
+        "alwaysShowRuleFailuresAsWarnings": false,
+        "configFile": "./tslint.json",
+        "suppressWhileTypeErrorsPresent": false,
+        "ignoreDefinitionFiles": true, //change after first pass fix
+        // "exclude": [  //moved to tslint.json
+        //   "**/node_modules/**/*",
+        //   "**/_graveyard/**/*",
+        //   "./built/**/*",
+        // ],
+      }
+    ],
   },
+  // "typeAcquisition": { //not enabling to force explicit usage of new types
+  //   "enable": true,
+  // },
   "include": [
-    "src/**/*"
+    "./src/**/*.ts",
+    //"./src/_internal/**/*.ts",
   ],
   "exclude": [
-    "node_modules",
-    "src/graveyard",
-    "typings"
-  ]
+    //"node_modules",
+    "./src/_graveyard/**/*.ts",
+    //"dist",
+  ],
+  // "typedocOptions": {
+  //   "mode": "modules",
+  //   "out": "docs",
+  //   "exclude": "test",
+  //   "theme": "default",
+  //   "ignoreCompilerErrors": true,
+  //   "excludePrivate": true,
+  //   "excludeNotExported": true,
+  //   "excludeExternals": false,
+  //   "excludeProtected": true,
+  //   //"target": "ES3",
+  //   "moduleResolution": "node",
+  //   "preserveConstEnums": true,
+  //   "stripInternal": true,
+  //   "suppressExcessPropertyErrors": true,
+  //   "suppressImplicitAnyIndexErrors": true,
+  //   "module": "commonjs",
+  //   "hideGenerator": true,
+  //   "includeDeclarations": false,
+  //   "readme": "none",
+  //   //"entryPoint": "\"src/xlib\""
+  // }
 }
